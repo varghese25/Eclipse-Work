@@ -31,8 +31,9 @@ public class JDBCDem {
 		while (rs.next()){ /* Display all resut in DB*/
 /*Out put will */
 		System.out.println("Id is " + rs.getInt(1)); 
-		System.out.println("Name is " + rs.getString(2));
+		System.out.println("firstName is " + rs.getString(2));
 		System.out.println("Salary is " + rs.getInt(3));
+                System.out.println("lastName is " + rs.getString(4));
 		}
 /*close the connection*/
 		con.close();
